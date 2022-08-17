@@ -24,8 +24,8 @@ imgargs vmlinuz put_kernel_img_args_here
 boot || goto custom_exit
 
 :option_two
-kernel https://boot.netboot.xyz/memdisk raw iso
-initrd http://192.168.10.10:8080/ventoy/ventoy-1.0.79-livecd.iso
+kernel https://boot.netboot.xyz/memdisk
+apped iso initrd=http://192.168.10.10:8080/ventoy/ventoy-1.0.79-livecd.iso raw
 boot || goto custom_exit
 
 :option_three
